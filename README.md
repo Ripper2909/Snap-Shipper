@@ -1,3 +1,4 @@
+TEST
 # Snap-Shipper
 
 This is a simple script to help you Ship those snapshots
