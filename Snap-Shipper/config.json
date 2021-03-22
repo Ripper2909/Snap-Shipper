@@ -1,11 +1,10 @@
 {
   "name": "Snap-Shipper",
-  "version": "0.0.1rc3",
-  "image": "hbdk/snap-shipper",
+  "version": "0.01",
   "slug": "snapshipper",
   "description": "Ship those snapshots",
   "url": "https://github.com/HBDK/Snap-Shipper",
-  "arch": ["armv7", "aarch64", "amd64", "i386"],
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "startup": "once",
   "boot": "manual",
   "map": ["backup:rw"],
@@ -16,18 +15,9 @@
         {
             "Name": "Your Webdav",
             "WebDavClient":{
-              "webdav_hostname": "https://Your-domæne/remote.php/dav/files/some-user/backups",
-              "webdav_login":    "some-user",
-              "webdav_password": "the password"
-            }
-        },
-        {
-            "Name": "AWS S3",
-            "S3Client":{
-              "endpoint_url": "https://s3.eu-west-1.amazonaws.com",
-              "aws_access_key": "<access key>",
-              "aws_secret_access_key": "<secret access key>",
-              "bucket": "<bucket name>"
+                "webdav_hostname": "https://Your-domæne/remote.php/dav/files/some-user/backups",
+                "webdav_login":    "some-user",
+                "webdav_password": "the password"
             }
         }
     ]
